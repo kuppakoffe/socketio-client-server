@@ -31,3 +31,37 @@ What should be the polling interval in seconds?
 ```
 
 After providing details for both questions, code will start that many clients and periodically send data to server answered in polling interval.
+
+
+
+## Example
+
+Server
+```bash
+❯ npm start
+
+
+
+info: Server listening on port 3333
+info: Joining room 1943f674-15d9-482c-a3bf-7cda337d8931
+
+
+```
+
+Client
+```bash
+❯ npm start
+
+How many client to be created? 5
+What should be the polling interval in seconds? 10
+info: Creating new client with id c6c90f31-86af-4beb-8c3b-cf797b97926e
+info: Creating new client with id d9d1017a-5206-4f55-854a-f8b62629d019
+info: Creating new client with id 1cc8f55b-9465-4621-9a30-ed32913f1e78
+info: Creating new client with id e8285880-ab4e-415a-8f9b-8ef01e3b71b3
+info: Creating new client with id d4e8294b-f578-48b6-96af-086588bf7d94
+info: Connected to server channel this is for id: c6c90f31-86af-4beb-8c3b-cf797b97926e
+info: Connected to server channel this is for id: d9d1017a-5206-4f55-854a-f8b62629d019
+info: Connected to server channel this is for id: 1cc8f55b-9465-4621-9a30-ed32913f1e78
+info: Connected to server channel this is for id: e8285880-ab4e-415a-8f9b-8ef01e3b71b3
+info: Connected to server channel this is for id: d4e8294b-f578-48b6-96af-086588bf7d94
+```
