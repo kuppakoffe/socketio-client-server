@@ -20,4 +20,6 @@ io.on('connection', (socket) =>{
     })
 })
 
-io.listen(3333)
+const PORT = process.env.PORT||3333;
+logger.info(`Server listening on port ${PORT}`)
+io.listen(PORT)
